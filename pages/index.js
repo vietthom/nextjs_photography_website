@@ -1,6 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from 'next/head';
+import Image from 'next/image';
 import Hero from '../components/Hero';
+import Slider from '../components/Slider';
+import { SliderData } from '../components/SliderData'
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading='LOCALS ONLY! // Skateboarding Photography' message='"You dont stop skating because you grew old, you grew old because you stopped skating."'/>
+      <Slider slides={ SliderData } />
     </div>
   )
 }
